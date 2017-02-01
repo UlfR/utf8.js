@@ -206,6 +206,7 @@
 		while ((tmp = decodeSymbol()) !== false) {
 			codePoints.push(tmp);
 		}
+		byteArray = null;
 		return ucs2encode(codePoints);
 	}
 
